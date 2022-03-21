@@ -9,7 +9,7 @@ export const Home = () => {
   const [changemade, setChangemade] = useState(0)
 
   useEffect(()=>{
-    axios.get("http://localhost:3001/books").then(({data})=>{
+    axios.get("http://localhost:8080/books").then(({data})=>{
       setBooks(data);
     })
   },[])
